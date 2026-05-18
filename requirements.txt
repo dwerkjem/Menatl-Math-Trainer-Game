@@ -1,0 +1,10 @@
+coverage==7.14.0
+iniconfig==2.3.0
+lefthook==2.1.6
+-e file:///home/derek/DEV/Menatl-Math-Trainer-Game
+packaging==26.2
+pluggy==1.6.0
+pygments==2.20.0
+pytest==9.0.3
+pytest-cov==7.1.0
+ruff==0.15.13

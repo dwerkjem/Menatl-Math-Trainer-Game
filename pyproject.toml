@@ -1,0 +1,49 @@
+[project]
+name = "Mental_Math_Trainer_Game"
+version = "0.0.0"
+dependencies = []
+requires-python = ">=3.13"
+authors = [
+  { name = "Derek R. Neilson", email = "derekneilson@mail.weber.edu" },
+]
+description = "A mental math game to help you learn"
+readme = "README.md"
+license = "Unlicense"
+license-files = ["LICENSE*"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+Mental_Math_Trainer_Game = "Mental_Math_Trainer_Game.__main__:main"
+
+[project.urls]
+Repository = "https://git.com"
+Issues = "https://git.com/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+  "lefthook>=2.1.6",
+  "pytest>=8.4.2",
+  "pytest-cov>=7.1.0",
+  "ruff>=0.15.12",
+]
+
+[tool.coverage.report]
+warn_under = 30
+omit = ["*/__main__.py"]
+
+[tool.coverage.run]
+source = ["boid"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["COM812", "D203", "D213"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "D"]
