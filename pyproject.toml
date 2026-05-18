@@ -1,7 +1,10 @@
 [project]
 name = "Mental_Math_Trainer_Game"
 version = "0.0.0"
-dependencies = []
+dependencies = [
+  "django>=6.0.5",
+  "python-dotenv>=1.2.2",
+]
 requires-python = ">=3.13"
 authors = [
   { name = "Derek R. Neilson", email = "derekneilson@mail.weber.edu" },
@@ -42,7 +45,8 @@ source = ["boid"]
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["COM812", "D203", "D213"]
+ignore = ["COM812", "D203", "D213", "D104", "E501"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["S101", "D"]
+"src/manage.py" = ["PLC0415", "TRY003", "EM101"]
