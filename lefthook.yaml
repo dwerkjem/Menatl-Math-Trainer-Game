@@ -11,6 +11,3 @@ pre-commit:
 
     - name: fix lint
       run: uv run ruff check --fix
-
-    - name: freeze packages
-      run: uv pip freeze > requirements.txt

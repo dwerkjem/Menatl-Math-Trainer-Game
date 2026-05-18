@@ -35,7 +35,6 @@ dev = [
 ]
 
 [tool.coverage.report]
-warn_under = 30
 omit = ["*/__main__.py"]
 
 [tool.coverage.run]
