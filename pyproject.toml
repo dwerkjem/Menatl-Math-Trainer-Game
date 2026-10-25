@@ -2,12 +2,12 @@
 name = "Mental_Math_Trainer_Game"
 version = "0.0.0"
 dependencies = [
-  "django>=6.0.5",
-  "python-dotenv>=1.2.2",
+  "django>=6.1.2",
+  "python-dotenv>=1.2.4",
 ]
 requires-python = ">=3.13"
 authors = [
-  { name = "Derek R. Neilson", email = "derekneilson@mail.weber.edu" },
+  { name = "Derek R. Neilson", email = "derekrneilson@gmail.com" },
 ]
 description = "A mental math game to help you learn"
 readme = "README.md"
@@ -31,17 +31,17 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-  "lefthook>=2.1.6",
-  "pytest>=8.4.2",
+  "lefthook>=2.2.2",
+  "pytest>=9.1.1",
   "pytest-cov>=7.1.0",
-  "ruff>=0.15.12",
+  "ruff>=0.17.2",
 ]
 
 [tool.coverage.report]
 omit = ["*/__main__.py"]
 
 [tool.coverage.run]
-source = ["boid"]
+source = ["Mental_Math_Trainer_Game"]
 
 [tool.ruff.lint]
 select = ["ALL"]
