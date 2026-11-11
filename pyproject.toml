@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [project.scripts]
-Mental_Math_Trainer_Game = "Mental_Math_Trainer_Game.__main__:main"
+mmtg = "mental_math_trainer_game.__main__:main"
 
 [project.urls]
 Repository = "https://git.com"
@@ -45,7 +45,7 @@ source = ["Mental_Math_Trainer_Game"]
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["COM812", "D203", "D213", "D104", "E501", "CPY001"]
+ignore = ["COM812", "D203", "D213", "D104", "E501", "CPY001", "FIX002"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["S101", "D"]
