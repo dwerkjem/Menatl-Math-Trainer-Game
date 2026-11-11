@@ -16,11 +16,10 @@ For more information on uv, including adding dependencies or running tools, refe
 
 ##### UV Helpful Knowledge
 
-Uv is a drop-in replacement for pip and can be used the same way ex:
+To install a package with uv use:
 
 ```sh
-uv pip [pip command]
-uv pip install [python-package]
+uv add [package_name]
 ```
 
 #### Set Up Git Hooks
