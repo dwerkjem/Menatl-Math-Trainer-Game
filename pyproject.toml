@@ -2,7 +2,6 @@
 name = "Mental_Math_Trainer_Game"
 version = "0.0.0"
 dependencies = [
-  "django>=6.1.2",
   "python-dotenv>=1.2.4",
 ]
 requires-python = ">=3.13"
@@ -32,9 +31,9 @@ build-backend = "hatchling.build"
 [dependency-groups]
 dev = [
   "lefthook>=2.2.2",
-  "pytest>=9.1.1",
+  "pytest>=9.2.0",
   "pytest-cov>=7.1.0",
-  "ruff>=0.17.2",
+  "ruff>=0.17.5",
 ]
 
 [tool.coverage.report]
