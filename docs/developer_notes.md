@@ -4,6 +4,11 @@
 
 ### Set Up Tools
 
+Prior to building this project ensure the requirements are satisfied. If you are on a Linux system using `apt` as the package manager you may run `./scripts/check_deps.sh` to install said requirements.
+
+> [!NOTE] Note
+> You can use `./scripts/check_deps.sh -y` to automatically install the requirements
+
 #### UV info
 
 This project uses [uv](https://docs.astral.sh/uv/) as the package manager. If uv is not installed, follow [this guide](https://docs.astral.sh/uv/getting-started/installation/) to install it. Then, synchronize the project dependencies with:
